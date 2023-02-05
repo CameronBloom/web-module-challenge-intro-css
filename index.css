@@ -139,21 +139,20 @@ html {
 
 .intro-container {
   width: 100%;
-  border: 1px solid;
+  /* border: 1px solid; */
   display: flex;
 }
 
 .intro-image-container {
-  
+  margin-left: 4rem;
 }
 
 .intro-image-container img {
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
+
 }
-
-
 
 .intro-text-container {
   display: flex;
@@ -161,23 +160,46 @@ html {
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .intro-text-container h1 {
   font-family: 'ChelseaMarket', serif;
   font-size: 4rem;
-  padding-bottom: 4rem;
+  padding: 2rem;
 }
 
 .intro-text-container p {
   width: 35rem;
-  padding-bottom: 2rem;
+  padding: 1rem;
   margin: auto;
 }
 
 .about-container {
   color: white;
   background-color: #DDB9A3;
+  margin: 2rem;
+}
+
+.about-container p {
+  text-align: center;
+  padding: 1rem;
+}
+
+.card-container {
+  background-color: yellow;
+}
+
+.card img {
+  width: 12rem;
+}
+
+.banner {
+
+}
+
+.banner img {
+
 }
 
 .footer {

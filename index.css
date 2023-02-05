@@ -47,9 +47,23 @@ table {
 	border-spacing: 0;
 }
 
+/* Font Family */
+@font-face {
+  font-family: ChelseaMarket;
+  src: url(fonts/ChelseaMarket-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoMono;
+  src: url(fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+  src: url(fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+
 /* Custom */
 html {
   font-size: 62.5%;
+  font-family: 'ChelseaMarket', 'RobotoMono', serif;
 }
 
 .container {

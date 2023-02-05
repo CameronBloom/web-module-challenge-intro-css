@@ -63,13 +63,14 @@ table {
 /* Custom */
 html {
   font-size: 62.5%;
-  font-family: 'ChelseaMarket', 'RobotoMono', serif;
+  font-family: 'RobotoMono', serif;
 }
 
 .container {
   font-size: 1.6rem;
   height: 100%;
-  width: 100%;
+  width: 80rem;
+  margin: auto;
 }
 
 .menu {
@@ -133,4 +134,52 @@ html {
   border-style: solid;
   border-width: 0.2rem;
   cursor: pointer;
+}
+
+
+.intro-container {
+  width: 100%;
+  border: 1px solid;
+  display: flex;
+}
+
+.intro-image-container {
+  
+}
+
+.intro-image-container img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+
+
+
+.intro-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.intro-text-container h1 {
+  font-family: 'ChelseaMarket', serif;
+  font-size: 4rem;
+  padding-bottom: 4rem;
+}
+
+.intro-text-container p {
+  width: 35rem;
+  padding-bottom: 2rem;
+  margin: auto;
+}
+
+.about-container {
+  color: white;
+  background-color: #DDB9A3;
+}
+
+.footer {
+  background-color: #F9E7DC;
 }

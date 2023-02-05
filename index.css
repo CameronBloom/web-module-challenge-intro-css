@@ -213,12 +213,17 @@ b {
 }
 
 .banner {
-
+  margin: auto;
+  text-align: center;
 }
+
 
 .banner img {
-
+  width: 100%;
+  height: 15rem;;
+  
 }
+
 
 .footer {
   background-color: #F9E7DC;

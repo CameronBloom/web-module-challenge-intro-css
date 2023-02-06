@@ -2,75 +2,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Link your CSS stylesheet -->
-  <link rel="stylesheet" href="index.css">
+  <!-- Link to Google Fonts (Call Fonts Before Referencing in CSS) -->
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link your CSS stylesheet -->
+    <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/x-icon" href="/assets/campfire_favicon_io/favicon-32x32.png">
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <div class="menu">
-      <div class="button plan">
-        <p>Plan your Visit</p>
-      </div>
-      <div class="button learn">
-        <p>Learn About the Park</p>
-      </div>
-      <div class="button engage">
-        <p>Get Involved</p>
-      </div>
-    </div>
 
-    <!-- Intro -->
-    <div class="intro-container">
-      <div class="intro-image-container">
-        <img src="assets/header_img.jpg" alt="">
-      </div>
-      <div class="intro-text-container">
+  <header>
+    <nav>
+      <a href="" class="orange">Plan your<br>Visit</a>
+      <a href="" class="blue">Learn About<br>the Park</a>
+      <a href="" class="yellow">Get<br>Involved</a>
+    </nav>
+  </header>
+
+  <section class="cta">
+    <div class="image">
+      <img src="assets/header_img.jpg" alt="Mountain Sunrise in Yosemite National Park" class="round">
+    </div>
+    <div class="text">
+      <div>
         <h1>Yosemite Park Guide</h1>
-        <p>Come explore California's beautiful wilderness.</p>
+        <h2>Come explore California's beautiful wilderness.</h2>
         <p>Always open. Reservations are not available or required to enter the park.</p>
       </div>
     </div>
+  </section>
 
-    <!-- About -->
-    <div class="about-container">
+  <section>
+    <div class="main">
       <p>Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.</p>
       <p>First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.</p>
     </div>
+  </section>
 
-    <!-- Cards -->
-    <div class="card-container">
-      <div class="card">
-        <img src="assets/campfire.png" alt="">
-        <p>Fire is a natural and essential part of Yosemite. We manage fire carefully and study how it interacts with the park's ecosystems. This blog provides updates about fires in Yosemite. Check for <b>current fire restrictions</b>.</p>
-      </div>
-      <div class="card">
-        <img src="assets/camper.png" alt="">
-        <p>We strongly recommend that you make reservations for lodging, camping, and backpacking. You can pay the <b>park entrance fee</b> upon arrival (there's no need to pay it in advance).</p>
-      </div>
+  <section class="info">
+    <div class="campfire">
+      <img src="assets/campfire.png" alt="Illustration of a Campfire">
+      <p>Fire is a natural and essential part of Yosemite. We manage fire carefully and study how it interacts with the park's ecosystems. This blog provides updates about fires in Yosemite. Check for <span class="bold">current fire restrictions</span>.</p>
     </div>
+    <div class="camper">
+      <img src="assets/camper.png" alt="Illustration of a Camper">
+      <p>We strongly recommend that you make reservations for lodging, camping, and backpacking. You can pay the <span class="bold">park entrance fee</span> upon arrival (there's no need to pay it in advance).</p>
+    </div>
+  </section>
 
-  </div>
-    <!-- Banner - TODO -->
-    <div class="banner">
-      <img src="assets/footer_img.jpg" alt="">
-    </div>
+  <!-- Empty Section with Background Image -->
+  <section class="banner-image">
+  </section>
 
-    <!-- Footer -->
-    <div class="footer">
-      <div class="menu">
-        <div class="button plan">
-          <p>Plan your Visit</p>
-        </div>
-        <div class="button learn">
-          <p>Learn About the Park</p>
-        </div>
-        <div class="button engage">
-          <p>Get Involved</p>
-        </div>
-      </div>
-    </div>
-      
-</body>
-</html>
+  <footer>
+    <nav>
+      <a href="" class="orange">Plan your<br>Visit</a>
+      <a href="" class="blue">Learn About<br>the Park</a>
+      <a href="" class="yellow">Get<br>Involved</a>
+    </nav>
+  </footer>

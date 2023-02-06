@@ -47,184 +47,165 @@ table {
 	border-spacing: 0;
 }
 
-/* Font Family */
-@font-face {
-  font-family: ChelseaMarket;
-  src: url(fonts/ChelseaMarket-Regular.ttf);
+
+
+/* Generic CSS Starter
+   - BoxSizing accounts for borders, margin and padding.
+   - Border is visible to help visualize HTML elements.
+   - MaxWidth of children can never be greater than the parent size.
+
+ */
+
+* {
+  box-sizing: border-box;
+  border: 1px solid grey;
+  max-width: 100%;
 }
 
-@font-face {
-  font-family: RobotoMono;
-  src: url(fonts/RobotoMono-Italic-VariableFont_wght.ttf);
-  src: url(fonts/RobotoMono-VariableFont_wght.ttf);
-}
+/* General Website Styles
+   - Set the default "rem" size to 10px.
+   - Set the default font size to 16px (1.6rem).
+   - Set the height of a line to 1.5 times the font size.
+   - Set the font families.
+   - Set verticle padding for section elements.
+ */
 
-
-/* Custom */
 html {
   font-size: 62.5%;
-  font-family: 'RobotoMono', serif;
 }
 
-b {
-  font-weight: bold;
-}
-
-.container {
+body {
   font-size: 1.6rem;
-  height: 100%;
-  width: 80rem;
-  margin: auto;
+  line-height: 1.5;
+  font-family: 'RobotoMono', monospace;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
+h1 {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 6rem;
 }
 
-.menu .button {
-  margin: 2.4rem 4.8rem;
-  width: 12rem;
-  height: 4.8rem;
-  color: white;
-  font-size: 1.6rem;
-  border-radius: 1.6rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-.menu .button p {
-  text-align: center;
-  vertical-align: center;
-  margin: auto;
-}
-
-.plan {
-  color: black;
-  background-color: #FF764E;
-}
-
-.plan:hover {
-  color: #FF764E;
-  background-color: white;
-  border-style: solid;
-  border-width: 0.2rem;
-  cursor: pointer;
-}
-
-.learn {
-  background-color: #5ED3EB;
-}
-
-.learn:hover {
-  color: #5ED3EB;
-  background-color: white;
-  border-style: solid;
-  border-width: 0.2rem;
-  cursor: pointer;
-}
-
-.engage {
-  background-color: #FFCD69;
-}
-
-.engage:hover {
-  color: #FFCD69;
-  background-color: white;
-  border-style: solid;
-  border-width: 0.2rem;
-  cursor: pointer;
-}
-
-
-.intro-container {
-  width: 100%;
-  /* border: 1px solid; */
-  display: flex;
-}
-
-.intro-image-container {
-  margin-left: 4rem;
-}
-
-.intro-image-container img {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 50%;
-
-}
-
-.intro-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+section {
+  padding: 4% 0;
+  width: 90%;
   margin: 0 auto;
 }
 
-.intro-text-container h1 {
-  font-family: 'ChelseaMarket', serif;
-  font-size: 4rem;
-  padding: 2rem;
+/* Header Section Styles */
+
+nav {
+  padding: 2% 0;
 }
 
-.intro-text-container p {
-  width: 35rem;
-  padding: 1rem;
-  margin: auto;
-}
-
-.about-container {
+nav a {
+  display: inline-block;
+  padding: 1% 0;
+  width: 10%;
+  text-align: center;
+  border-radius: 1rem;
   color: white;
+  text-decoration: none;
+}
+
+.orange {
+  background-color: #FF764E;
+  margin-left: 10%;
+}
+
+.orange:hover {
+  background-color: white;
+  color: #FF764E;
+  border-color: #FF764E;
+  border-style: solid;
+  border-width: 0.2rem;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: #5ED3EB;
+  margin: 0 24%;
+}
+
+.blue:hover {
+  background-color: white;
+  color: #5ED3EB;
+  border-color: #5ED3EB;
+  border-style: solid;
+  border-width: 0.2rem;
+  cursor: pointer;
+}
+
+.yellow {
+  background-color: #FFCD69;
+  margin-right: 10%;
+}
+
+.yellow:hover {
+  background-color: white;
+  color: #FFCD69;
+  border-color: #FFCD69;
+  border-style: solid;
+  border-width: 0.2rem;
+  cursor: pointer;
+}
+
+/* Title Section */
+.cta {
+  position: relative;
+}
+
+.image, .text {
+  display: inline-block
+}
+
+.image {
+  width: 30%;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.text {
+  width: 55%;
+  margin-left: 5%;
+  text-align: center;
+  line-height: 3;
+  position: absolute;
+  top: 150px;
+}
+
+/* Main Section */
+.main {
   background-color: #DDB9A3;
-  margin: 2rem;
+  color: white;
+  padding: 2%;
 }
 
-.about-container p {
-  text-align: center;
-  padding: 1rem;
+.info div {
+  width: 30%;
+  margin: 5% auto;
+  align-items: center;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin: auto;
-  text-align: center;
-}
-
-.card img {
-  width: 16rem;
-  
-}
-
-.card p {
-  font-size: 1rem;
-  text-align: center;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-bottom: 3rem;
-}
-
-.banner {
-  margin: auto;
-  text-align: center;
-}
-
-
-.banner img {
+.info div img {
   width: 100%;
-  height: 15rem;;
-  
 }
 
+.bold {
+  font-weight: bold;
+}
 
-.footer {
+.banner-image {
+  width: 100%;
+  height: 50vh;
+  background-image: url('assets/footer_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-positoin: top center;
+}
+
+/* Footer Section */
+footer {
   background-color: #F9E7DC;
 }
